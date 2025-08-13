@@ -6,11 +6,7 @@ import matplotlib.ticker as mtick
 
 # -------- helpers --------
 def _load_dataset(show_uploader: bool = False):
-    """
-    Load dataset tanpa menampilkan uploader secara default.
-    Jika show_uploader=False, akan mencoba membaca 'payment_fraud.csv'.
-    Bila file tidak ada, hanya menampilkan info (tanpa uploader).
-    """
+    
     df = None
 
     if not show_uploader:
@@ -75,6 +71,19 @@ def _hist_by_label(df, col, bins):
 def eda():
     st.title("Exploratory Data Analysis")
     st.markdown("---")
+    st.markdown('''
+Pada tahap ini, kita melakukan eksplorasi data untuk memahami pola, distribusi, dan hubungan antar variabel. EDA membantu kita:
+- Memahami karakteristik data.
+- Mendeteksi outlier, missing values, dan ketidakseimbangan kelas.
+- Mengidentifikasi fitur yang potensial menjadi predictor fraud.
+- Memberikan dasar logis untuk Feature Engineering.
+
+### Pertanyaan Eksplorasi
+Berikut adalah pertanyaan-pertanyaan utama yang akan dijawab melalui EDA:
+1. Seberapa besar ketidakseimbangan antara transaksi legitimate dan fraud?
+2. Metode pembayaran mana yang paling sering digunakan dalam transaksi fraud?
+3. Apakah fraud lebih sering terjadi pada kategori produk tertentu (misal: Electronics)?
+''')
 
     df = _load_dataset()
     if df is None:
