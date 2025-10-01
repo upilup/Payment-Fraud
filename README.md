@@ -11,24 +11,14 @@ Project documentation for Milestone 2 Phase 1 — **Fraud transaction detection*
 
 ## Repository Outline
 .<br>
-├── app.py                   # Main Streamlit script for the app<br>
-├── home.py                  # Landing page of the app<br>
-├── eda.py                   # Streamlit page for Exploratory Data Analysis<br>
-├── prediction.py            # Streamlit prediction page<br>
-├── model.pkl                # Stored machine learning model<br>
-├── xgboost_best_model.pkl   # Best XGBoost model from training<br>
-├── best_threshold.pkl       # Optimal probability threshold<br>
-├── numerical_features.pkl   # List of numerical features<br>
-├── categorical_features.pkl # List of categorical features<br>
-├── model_meta.json          # Model metadata<br>
-├── payment_fraud.csv        # Main dataset<br>
-├── requirements.txt         # Python dependencies<br>
-├── description.md           # Project description<br>
-├── README.md                # Task instructions from instructor<br>
-├── README_deploy.md         # Deployment guide for the app<br>
-├── url.txt                  # Deployment URL<br>
-├── P1M2_Muhammad_Luthfi_Alfatih.pdf / .pptx  # Project report and presentation<br>
-└── __pycache__/             # Python cache<br>
+deployment/<br>
+├── app.py              # Main Streamlit script for the app<br>
+├── home.py             # Landing page of the app<br>
+├── eda.py              # Streamlit page for Exploratory Data Analysis<br>
+├── prediction.py       # Streamlit prediction page<br>
+├── model.pkl           # Stored machine learning model<br>
+├── requirements.txt    # Python dependencies<br>
+└── __pycache__/        # Python cache<br>
 
 > Note: *.pkl* files are generated after running the notebook.
 
